@@ -13,10 +13,11 @@ public class User {
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	private String email;
 	
 	public User () {
-}
+	}
 
 	public User(Long id, String email) {
 		this.id = id;
