@@ -1,8 +1,16 @@
 import MovieCard from "components/MovieCard";
 import Pagination from "components/Pagination";
+import { isConstructorDeclaration } from "typescript";
 
 function Listing() {
 
+
+    //FORMA ERRADA
+    axios.get(`${BASE_URL}/MOVIES?SIZE=12&PAGE=0`)
+        .then(response => {
+            console.log(response.data);
+        });
+        
     return (
         <>
             <Pagination />
