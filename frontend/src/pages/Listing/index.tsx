@@ -13,12 +13,12 @@ function Listing() {
     const [pageNumber, setPageNumber] = useState(0);
 
     const [page, setPage] = useState<MoviePage>({
-        content: [],
-        last: true,
-        totalPages: 0,
-        size: 12,
-        first: true,
-        numberOfElements: 0,
+        content: []
+        last: true
+        totalPages: 0
+        size: 12
+        first: true
+        numberOfElements: 0
         empty: true
     });
     
